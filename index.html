@@ -204,6 +204,8 @@ figcaption { font-size: 15px; line-height: 1.5; color: var(--dust); }
 .log { margin: 56px 0 0; }
 .log ul { margin: 0; padding: 0; list-style: none; }
 .log .log-older { margin-top: 40px; }
+.creatures { margin-top: 64px; }
+.creatures > p { max-width: 65ch; margin: 0 0 24px; color: var(--dust); }
 .log li { display: grid; grid-template-columns: minmax(0, 17em) minmax(0, 1fr); gap: 2px 32px; padding-block: 13px; border-top: 1px solid var(--line); }
 .log li span { color: var(--dust); }
 .download { margin-top: 48px; padding: 20px 24px; border: 2px dashed var(--line); }
@@ -394,6 +396,24 @@ dialog img { max-width: 100%; max-height: 80vh; width: auto; height: auto; margi
         <button type="button" class="shot fit" style="--ar: 2258 / 1670"><img src="img/cast/sprite-sheet.png" width="2258" height="1670" loading="lazy" alt="Sprite sheet: the Ranger, the Centurion and the Prime, with and without helmets, each shown walking and attacking with ten weapons"></button>
         <figcaption>The Ranger and the Legion with every weapon: walk, punch, knife, hammer, spear, pistol, SMG, shotgun, flamer, minigun and rocket.</figcaption>
       </figure>
+      <div class="creatures" id="creatures">
+        <h3 class="sub">Creatures</h3>
+        <p>Every creature in New Vegas is in: 171 looks, from geckos and deathclaws to cazadores, radscorpions, ghouls and robots. Each one walks, attacks and dies as a Fallout 2 sprite, and the super mutants carry New Vegas's weapons.</p>
+        <div class="gallery">
+          <figure class="g4">
+            <button type="button" class="shot fit" style="--ar: 1280 / 788"><img src="img/creatures/deathclaws.png" width="1280" height="788" loading="lazy" alt="Three deathclaw sprites: Deathclaw, Young Deathclaw and Deathclaw Mother"></button>
+            <figcaption>Deathclaws.</figcaption>
+          </figure>
+          <figure class="g4">
+            <button type="button" class="shot fit" style="--ar: 1280 / 788"><img src="img/creatures/geckos.png" width="1280" height="788" loading="lazy" alt="Seven gecko sprites: five Fire Geckos, a Golden Gecko and a Gecko"></button>
+            <figcaption>Geckos.</figcaption>
+          </figure>
+          <figure class="g4">
+            <button type="button" class="shot fit" style="--ar: 1280 / 788"><img src="img/creatures/super-mutants-armed.png" width="1280" height="788" loading="lazy" alt="Four super mutants with a super sledge, an assault carbine, a hunting rifle and a flamer firing"></button>
+            <figcaption>Super mutants with New Vegas's weapons.</figcaption>
+          </figure>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -415,6 +435,14 @@ dialog img { max-width: 100%; max-height: 80vh; width: auto; height: auto; margi
         <figure class="g4">
           <button type="button" class="shot"><img src="img/places/opening-scene.jpg" width="1280" height="640" loading="lazy" alt="Night at the cemetery: Benny aims a pistol at the kneeling Courier while two Great Khans watch"></button>
           <figcaption>The opening scene at the graveside, from the film.</figcaption>
+        </figure>
+        <figure class="g6">
+          <button type="button" class="shot fit" style="--ar: 1520 / 1108"><img src="img/places/house-roof-on.png" width="1520" height="1108" loading="lazy" alt="A long dark wooden house at the south end of Goodsprings with its roof on, a corn patch beside it"></button>
+          <figcaption>A Goodsprings house on the town map, roof on.</figcaption>
+        </figure>
+        <figure class="g6">
+          <button type="button" class="shot fit" style="--ar: 1520 / 1108"><img src="img/places/house-roof-off.png" width="1520" height="1108" loading="lazy" alt="The same house with its roof lifted off, showing its furnished rooms inside the walls"></button>
+          <figcaption>Walk in and the roof lifts off, as in Fallout 2. New Vegas's rooms sit inside the house's own walls.</figcaption>
         </figure>
         <figure class="g12">
           <button type="button" class="shot fit" style="--ar: 2000 / 948"><img src="img/places/goodsprings-map.jpg" width="2000" height="948" loading="lazy" alt="The whole Goodsprings town centre map as one isometric diamond"></button>
@@ -472,13 +500,16 @@ dialog img { max-width: 100%; max-height: 80vh; width: auto; height: auto; margi
             <li>The General Store, Doc Mitchell's house, the gas station and three homes, each behind a working door</li>
             <li>Goodsprings Cemetery</li>
             <li>The opening scene, as the start of the game and as a film</li>
+            <li>A house you walk into Fallout 2's way: the roof lifts off and the room sits inside its walls</li>
             <li>14 characters as sprites, with their lines from New Vegas</li>
+            <li>Every New Vegas creature as a Fallout 2 sprite: 171 looks that walk, attack and die</li>
             <li>An open-source Fallout 2 engine with Dustlight's new lighting merged in</li>
           </ul>
         </div>
         <div>
           <h3 class="sub">Next</h3>
           <ul class="ticks todo">
+            <li>The rest of Goodsprings' buildings, entered the same way as that house</li>
             <li>The south end of town: the schoolhouse, Victor's shack and one more house</li>
             <li>The two houses to the north</li>
             <li>Goodsprings Source</li>
@@ -491,6 +522,12 @@ dialog img { max-width: 100%; max-height: 80vh; width: auto; height: auto; margi
         <ul>
           <li><strong>Every way to die</strong><span>Everyone in the cast has Fallout 2's full set of deaths: shot through, cut in half, burned, melted, zapped to ash and blown apart. When someone is blown apart, the pieces are cut from their own body.</span></li>
           <li><strong>The flamer held low</strong><span>The flamer is gripped at its handle and carried at the hip, the way Fallout 2's people carry it, and its flame lights the one holding it.</span></li>
+        </ul>
+        <h3 class="sub log-older"><time datetime="2026-11-24">24 November 2026</time></h3>
+        <ul>
+          <li><strong>A house you walk into</strong><span>The first Goodsprings house works the way Fallout 2's buildings do: the roof lifts off when you step through the door, with no loading screen.</span></li>
+          <li><strong>Every creature is in</strong><span>All 171 creature looks from New Vegas are Fallout 2 sprites that walk, attack and die.</span></li>
+          <li><strong>Super mutants armed</strong><span>Super mutants carry the super sledge, assault carbine, hunting rifle, flamer, minigun, missile launcher and grenades.</span></li>
         </ul>
         <h3 class="sub log-older"><time datetime="2026-11-22">22 November 2026</time></h3>
         <ul>
